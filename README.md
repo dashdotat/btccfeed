@@ -17,8 +17,8 @@ You need Mongo installed and need to edit lib/mongoid.rb to use your Mongo insta
 At this point, the easiest way to add a feed is to run
 
     irb -r ./boot
-    Feed.create(:feed_name => '<feed name>', :feed_url => '<url to RSS feed>'
-		^-D
+    Feed.create(:feed_name => '<feed name>', :feed_url => '<url to RSS feed>')
+    ^-D
 
 The scripts take care of adding the title from the feed, as well as etag/last-modified to keep transfers down
 
