@@ -1,0 +1,6 @@
+production:
+  sessions:
+    default:
+      database: btccfeed
+      hosts:
+        - localhost:27017
