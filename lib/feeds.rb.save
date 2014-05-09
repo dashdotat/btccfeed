@@ -23,7 +23,7 @@ def process_entry(feed, e)
 	img = doc.xpath('//img[contains(@class,"attachment-article")]').first
   article = doc.xpath('//div[contains(@class,"article")]').first
 	entry.image_url = img['src'] unless img.nil? || img['src'].nil?
-  entry.body = article.to_s
+  entry.body = article.to_html(encoding:'US-ASCII')
 	entry.save
 	puts " - Set image_url to #{entry.image_url}"
 end

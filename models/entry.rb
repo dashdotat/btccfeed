@@ -9,4 +9,6 @@ class Entry
 	field :published, type: DateTime
 	field :entry_id, type: String
 	field :image_url, type: String
+  field :categories, type: Array
+  field :body, type: String
 end
